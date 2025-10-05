@@ -35,10 +35,51 @@ body {
 }
 
 /* ===========================
+   Navegación   
+=========================== */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #111;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #ffcc00;
+}
+
+/* ===========================
+   Pseudo-elemento
+=========================== */
+h2::first-letter {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+
+/* ===========================
    Sección Sobre mí
 =========================== */
 .sobre-mi {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
@@ -88,6 +129,56 @@ body {
 }
 
 /* ===========================
+   Sección Contacto
+=========================== */
+
+/* ====== Sección Contacto ====== */
+.contacto {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.contacto h2 {
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Lista de redes sociales en línea */
+.contacto .redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Estilo para los íconos */
+.contacto .redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.contacto .redes img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+
+/* ===========================
    Pie de página
 =========================== */
 footer {
@@ -99,38 +190,3 @@ footer {
     font-size: 0.9em;
 }
 
-/* ===========================
-   Pseudo-elemento
-=========================== */
-h2::first-letter {
-    color: #ffcc00;
-    font-size: 1.4em;
-}
-/* Menú de navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: #111;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffcc00;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: white;
-}
-
-/* Banner */
-.banner {
-    width: 100%;
-    height: auto;
-    border-bottom: 4px solid #ffcc00;
-}
