@@ -26,13 +26,7 @@ body {
     position: relative; /* <-- Uso de position */
 }
 
-#encabezado::after {
-    content: "👾";
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    font-size: 24px;
-}
+
 
 /* ===========================
    Navegación   
@@ -85,7 +79,7 @@ h2::first-letter {
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(245, 131, 0, 0.544);
     text-align: center;
 }
 
